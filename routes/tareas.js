@@ -9,6 +9,9 @@ router.post('/', tareasController.addTarea)
 
 router.delete('/:id', tareasController.eliminarTarea)
 
+// router.put('/:id', tareasController.editarTarea)
 
 
 module.exports = router;
+
+
