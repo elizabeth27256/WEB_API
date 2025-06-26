@@ -1,12 +1,17 @@
-const Tarea = require('../model/Tarea');
+// const Tarea = require('../model/Tarea');
+// const matematicas = require('../martematicas')
 
-exports.getTareas = async (req,res) =>{
+// import Tarea from "./routes/tareas"
+
+
+export let getTareas (req, res){
+    console.log(matematicas.sumar (1,3));
     const tareas = await Tarea.find;
     console.log(`EL numero de tareas es ${tareas.length}`);
     res.json(tareas);
 }
 
-exports.addTarea = async(req, res) => {
+export let addTarea = (req, res) => {
     let {nombre, descripcion, completed} = req.body;  //hacemos desestructurizacion
     let nuevo = new Tarea({nombre, descripcion, completed});
     await nuevo.save();
@@ -14,7 +19,7 @@ exports.addTarea = async(req, res) => {
     res.status(201).json(nuevo);
 }
 
-exports.eliminarTarea = async(req, res) => {
+export let eliminarTarea = async(req, res) => {
     await Tarea.findByIdAndDelete(req.params.id)
     res.json({ message: "Tarea elminada correctamente" });
 };

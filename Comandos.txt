@@ -1,6 +1,16 @@
-npm init -y
-npm i express
-node index.js 
-npm run dev ---Para correr el servidor--
-npm install mongodb
-npm install mongoose dotenv
+///*****COMANDOS UTILIZADOS******///
+    npm init -y --Crea el archivo package.json-- dependencias, comandos npm
+    1.-Luego del comando creamos nuestro archivo idex.js
+
+///////PAQUETES INTALADOS/////
+    npm i express ---Permite crear api de manera sencilla(get, post)
+    node index.js 
+    npm run dev ---Para correr el servidor--
+    npm install mongodb ---Conectarnos a una base de datos, en la nube--
+    npm install mongoose dotenv ---Permite leer archivos .env---
+
+///*****Ejecutar en la power shell como adminitrador*****/// 
+    Set-ExecutionPolicy RemoteSigned 
+
+///****** dependencias *****/////
+ npm install vitest ///****Libreria para realizar testin en javascript, permite ejecutar pruebas*****//

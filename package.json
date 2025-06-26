@@ -2,8 +2,9 @@
   "name": "web_api",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "vitest",
     "dev": "node index.js"
   },
   "repository": {
@@ -22,7 +23,8 @@
     "express": "^5.1.0",
     "mogodb": "^0.0.1-security",
     "mongodb": "^6.17.0",
-    "mongoose": "^8.16.0"
+    "mongoose": "^8.16.0",
+    "vitest": "^3.2.4"
   },
   "description": ""
 }

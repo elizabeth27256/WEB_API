@@ -1,4 +1,13 @@
-require('dotenv').config();
+// require('dotenv').config();
+
+import dotenv  from "dotenv";
+import express  from "express";
+import mongoose  from "mongoose";
+import tareasRoutes from "./routes/tareas"
+
+dotenv.config()
+
+
 let express = require('express');
 let tareasRoutes = require('./routes/tareas');
 let mongoose = require('mongoose');
