@@ -1,17 +1,17 @@
 // const Tarea = require('../model/Tarea');
 // const matematicas = require('../martematicas')
 
-// import Tarea from "./routes/tareas"
+import Tarea from "../model/Tarea"
 
 
-export let getTareas (req, res){
+export let getTareas = async (req, res) => {
     console.log(matematicas.sumar (1,3));
     const tareas = await Tarea.find;
     console.log(`EL numero de tareas es ${tareas.length}`);
     res.json(tareas);
-}
+};
 
-export let addTarea = (req, res) => {
+export let addTarea = async  (req, res) => {
     let {nombre, descripcion, completed} = req.body;  //hacemos desestructurizacion
     let nuevo = new Tarea({nombre, descripcion, completed});
     await nuevo.save();
