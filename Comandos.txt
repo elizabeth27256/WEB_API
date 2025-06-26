@@ -1,0 +1,6 @@
+npm init -y
+npm i express
+node index.js 
+npm run dev ---Para correr el servidor--
+npm install mongodb
+npm install mongoose dotenv
